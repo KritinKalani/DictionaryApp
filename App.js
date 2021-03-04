@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import dictionary from './database.js';
+import Header from 'react-native-elements';
 
 export default class App extends React.Component{
 constructor(){
@@ -53,6 +55,8 @@ if(responseObj){
 render(){
   return(
     <View>
+
+      <Header></Header>
 <TextInput 
 style = {styles.inputBox}
 value = {this.state.text}
