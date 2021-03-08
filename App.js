@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import dictionary from './database.js';
-import Header from 'react-native-elements';
+import {Header} from 'react-native-elements';
 
 export default class App extends React.Component{
 constructor(){
@@ -56,7 +56,8 @@ render(){
   return(
     <View>
 
-      <Header></Header>
+      <Header backgroundColor = {'#9c8210'}
+            centerComponent = {{text: 'DictionaryApp', style:{color: '#fff', fontSize:20, fontFamily: 'cursive'}}}/>
 <TextInput 
 style = {styles.inputBox}
 value = {this.state.text}
